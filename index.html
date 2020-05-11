@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/f9692c4557.js" crossorigin="anonymous"></script>
+
+    <title>E-Learning</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" alt="Logo" style="width:65px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 18px;">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#syllabus" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Syllabus
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#team">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-us">Contact Us</a>
+                </li>
+            </ul>
+            <div class="mx2">
+                <button class="btn btn-primary" data-toggle="modal" data-target="#registerModalLong">Register</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+        Launch static backdrop modal
+    </button>
+
+    <!-- Register Modal -->
+    <!-- Button trigger modal -->
+    <div class="modal fade" id="registerModalLong" tabindex="-1" role="dialog" aria-labelledby="registerModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLongTitle">Student Registration</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="post" class="regisform">
+                        <label for="name">Full Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Enter Your Full Name" required>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Enter Your Phone No." required>
+                        <label for="email">Email;</label>
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+                        <label for="cars">Select Your Gender:</label>
+                        <select id="gender" name="gender" form="genderform" required>
+                            <option value="none">None</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                        <label for="class">Select Your Standard:</label>
+                        <select id="standard" name="classlist" form="classform" required>
+                            <option value="none">None</option>
+                            <option value="5">V</option>
+                            <option value="6">VI</option>
+                            <option value="7">VII</option>
+                            <option value="8">VIII</option>
+                            <option value="9">IX</option>
+                            <option value="10">X</option>
+                        </select>
+                        <label for="dob">Date Of Birth:</label>
+                        <input type="date" name="date" id="date" placeholder="Enter Your Date Of Birth" required>
+                        <label for="address">Address:</label>
+                        <input type="text" name="address" id="address" placeholder="Enter Your Address" required>
+                        <label for="img">Passport Photo:</label>
+                        <input type="file" id="img" name="img" accept="image/*" required>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade mt-5" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/e-learning-1.jpg" class="d-block w-100 " alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1><span class="welcome-head">Welcome To E-learning</span></h1>
+                    <p style="color: black;">We Are Here For Your Successfull Future</p>
+                    <button class="btn btn-danger">Contact Us</button>
+                    <button class="btn btn-primary">Team</button>
+                    <button class="btn btn-success">Register</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/e-learning-2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1><span class="welcome-head">We Have Experience Team Of Teacher</span></h1>
+                    <p style="color: black;">For Online Or Offline</p>
+                    <button class="btn btn-danger">Contact Us</button>
+                    <button class="btn btn-primary">Team</button>
+                    <button class="btn btn-success">Register</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/e-learning-3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1><span class="welcome-head">Welcome To E-learning</span></h1>
+                    <p style="color: black;">We Are Here For Your Successfull Future</p>
+                    <button class="btn btn-danger">Contact Us</button>
+                    <button class="btn btn-primary">Team</button>
+                    <button class="btn btn-success">Register</button>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="container-fluid my-1" id="about">
+        <div class="title-text col-sm-12">
+            <h1 class='title'>About Us</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ratione iste magnam
+                    itaque tempore explicabo veniam deserunt consequuntur vero, tenetur sint, animi quidem incidunt quis
+                    ut ullam delectus at nisi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+                    illum, exercitationem non obcaecati totam numquam quod, tenetur laborum perferendis assumenda earum
+                    voluptates laudantium! Adipisci quod necessitatibus maxime dignissimos similique culpa ex? Dolorem,
+                    harum in modi quidem culpa quasi praesentium eius. Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Expedita neque, at pariatur harum ab officia dicta, aut laudantium optio minima
+                    eaque fugit animi est vitae perspiciatis? Veniam eligendi repellat accusamus ex, in sapiente hic
+                    perferendis! Corporis mollitia, optio dolorum vitae facilis culpa dolores totam, vel rerum enim
+                    recusandae ullam aliquam!</p>
+            </div>
+            <div class="col-md-6 ">
+                <img src="img/about.jpg" alt="" class="imgconts img-fluid">
+            </div>
+        </div>
+        <a href="#" class="btn btn-outline-danger" role="button" aria-disabled="true">Read More</a>
+    </div>
+    <div class="container-fluid" id="team">
+        <div class="title-text col-sm-12">
+            <h1 class='title'>Our Team</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <div class="card middle cards">
+                    <div class="front">
+                        <img src="img/team-1.jpg" class="center img-fluid">
+                    </div>
+                    <div class="back">
+                        <div class="back-content middle">
+                            <h2>Neture</h2>
+                            <span>Youtube Channel</span>
+                            <div class="sm">
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="card cards middle">
+                    <div class="front">
+                        <img src="img/team-2.jpg" class="center img-fluid">
+                    </div>
+                    <div class="back">
+                        <div class="back-content middle">
+                            <h2>Neture</h2>
+                            <span>Youtube Channel</span>
+                            <div class="sm">
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="card cards middle">
+                    <div class="front">
+                        <img src="img/team-3.jpg" class="center img-fluid">
+                    </div>
+                    <div class="back">
+                        <div class="back-content middle">
+                            <h2>Neture</h2>
+                            <span>Youtube Channel</span>
+                            <div class="sm">
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="syllabus">
+        <div class="title-text col-sm-12">
+            <h1 class='title'>Top Categories</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <div class="card bg-secondary text-white my-2">
+                    <div class="card-body" style="text-align: center;">Business</div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="card bg-secondary text-white my-2">
+                    <div class="card-body" style="text-align: center;">Marketing</div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="card bg-secondary text-white my-2">
+                    <div class="card-body" style="text-align: center;">IT and Software</div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="card bg-secondary text-white my-2">
+                    <div class="card-body" style="text-align: center;">Photography</div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="card bg-secondary text-white my-2">
+                    <div class="card-body" style="text-align: center;">Development</div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="card bg-secondary text-white my-2">
+                    <div class="card-body" style="text-align: center;">Design</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="contact-us">
+        <div class="title-text col-sm-12">
+            <h1 class='title'>Contact Us</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <form action="" method="post" class="contactform">
+                        <input type="text" name="name" id="name" placeholder="Enter Your Full Name" required>
+                        <input type="text" name="email" id="email" placeholder="Enter Your Email" required>
+                        <input type="tel" name="phone" id="phone" placeholder="Enter Your Phone No." required>
+                        <textarea name="message" id="message" cols="30" rows="10"
+                            placeholder="Type Your Message"></textarea>
+                        <input type="button" value="Send" class="btn btn-success send">
+                    </form>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30703548.983640693!2d64.4174241001208!3d20.05078538779035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1589182979809!5m2!1sen!2sin"
+                        style="width: 100%;height: 450px;"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <h2 class="foot-head">Quick Link</h2>
+                    <ul class="quick-link">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <h2 class="foot-head">Services</h2>
+                    <ul class="service-link">
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <h2 class="foot-head">Address</h2>
+                    <div class="address">
+                        <p><i class="fas fa-home"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p><i class="far fa-envelope"></i> Something@gmail.com</p>
+                        <p><i class="fas fa-phone-alt"></i>&nbsp;+91-000 000 0000<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+91-000
+                            000 0000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p class="copyright-text">Copyright &#x24B8; 2020 All Right Reserved By <a
+                href="https://www.facebook.com/SJHA810/" target="_blank"> Suman Jha</a></p>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
